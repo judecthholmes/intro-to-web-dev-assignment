@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailing List - The Strokes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Strokes</h1>
+        <p class="tagline">Join Our Mailing List</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="band.html">The Band</a></li>
+            <li><a href="discography.html">Discography</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="mailing-list.html" class="active">Mailing List</a></li>
+            <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="mailing-intro">
+            <h2>Stay Connected</h2>
+            <p>Sign up to get the latest news about The Strokes - tour dates, new music, and more.</p>
+        </section>
+
+        <section id="signup-form">
+            <h2>Sign Up</h2>
+            <form id="mailingListForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <button type="submit" id="submitBtn">Subscribe</button>
+            </form>
+
+            <div id="formMessage" class="form-message"></div>
+        </section>
+
+        <section id="benefits">
+            <h2>Why Subscribe?</h2>
+            <ul>
+                <li>Be the first to know about new album releases</li>
+                <li>Get early access to tour ticket pre-sales</li>
+                <li>Receive exclusive behind-the-scenes content</li>
+                <li>Stay updated on band member solo projects</li>
+                <li>Access to exclusive merchandise offers</li>
+            </ul>
+        </section>
+
+        <section id="privacy">
+            <h2>Privacy Notice</h2>
+            <p>Your email will only be used for Strokes updates and won't be shared with anyone else. You can unsubscribe whenever you want.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Strokes Fan Site. This is a fan-made website for educational purposes.</p>
+        <p>All images and content are property of their respective owners.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

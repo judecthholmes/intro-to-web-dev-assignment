@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall of Fame - The Strokes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Strokes</h1>
+        <p class="tagline">Rock and Roll Hall of Fame</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="band.html">The Band</a></li>
+            <li><a href="discography.html">Discography</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="mailing-list.html">Mailing List</a></li>
+            <li><a href="hall-of-fame.html" class="active">Hall of Fame</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hof-intro">
+            <h2>Rock and Roll Hall of Fame</h2>
+            <p>Look up who got inducted into the Rock and Roll Hall of Fame by year. The data is pulled from the server so you can browse different years.</p>
+        </section>
+
+        <section id="hof-search">
+            <h2>Search by Year</h2>
+            <form id="hofForm">
+                <div class="form-group">
+                    <label for="year">Select Year:</label>
+                    <input type="number" id="year" name="year" min="1986" max="2024" value="2021" placeholder="Enter year (1986-2024)">
+                    <span class="error-message" id="yearError"></span>
+                </div>
+                <button type="submit" id="hofSubmitBtn">Search</button>
+            </form>
+        </section>
+
+        <section id="hof-results">
+            <h2>Inductees</h2>
+            <div id="hofLoading" class="loading">Loading Hall of Fame data...</div>
+            <div id="hofError" class="error-display"></div>
+            <div id="hofData" class="hof-grid"></div>
+        </section>
+
+        <section id="hof-info">
+            <h2>About the Hall of Fame</h2>
+            <p>The Rock and Roll Hall of Fame, located in Cleveland, Ohio, honors artists who have had a significant impact on the evolution, development, and perpetuation of rock and roll.</p>
+            <ul>
+                <li><strong>Founded:</strong> 1983</li>
+                <li><strong>First Induction:</strong> 1986</li>
+                <li><strong>Location:</strong> Cleveland, Ohio, USA</li>
+                <li><strong>Eligibility:</strong> Artists become eligible 25 years after their first recording</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Strokes Fan Site. This is a fan-made website for educational purposes.</p>
+        <p>All images and content are property of their respective owners.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

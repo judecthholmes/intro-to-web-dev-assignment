@@ -1,0 +1,640 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2b2118;
+    background-color: #faf6f1;
+}
+
+header {
+    background: linear-gradient(135deg, #1c1410 0%, #2b1d14 100%);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    color: #e8762b;
+    font-style: italic;
+}
+
+nav {
+    background-color: #3d2814;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #e8762b;
+    color: #fff;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    color: #1c1410;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #e8762b;
+}
+
+#hero .hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+#highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+#highlights h2 {
+    grid-column: 1 / -1;
+}
+
+.highlight-card {
+    background: #fdf5ed;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #e8762b;
+}
+
+
+
+
+
+.highlight-card h3 {
+    color: #3d2814;
+    margin-bottom: 0.5rem;
+}
+
+#quick-facts ul {
+    list-style: none;
+}
+
+
+#quick-facts ul li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+#quick-facts ul li:last-child {
+    border-bottom: none;
+}
+
+#members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+#members h2 {
+    grid-column: 1 / -1;
+}
+
+.member-card {
+    background: #fdf5ed;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.member-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid #e8762b;
+}
+
+.member-card h3 {
+    color: #1c1410;
+    margin-bottom: 0.25rem;
+}
+
+.member-card .role {
+    color: #e8762b;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.member-card ul {
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.member-card ul li {
+    margin-bottom: 0.5rem;
+}
+.album-card {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.album-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.album-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.album-info h3 {
+    color: #1c1410;
+    font-size: 1.5rem;
+}
+
+.album-info .year {
+    color: #e8762b;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.album-info h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #3d2814;
+}
+
+.album-info ol {
+    padding-left: 1.5rem;
+    columns: 2;
+    column-gap: 2rem;
+}
+
+.album-info ol li {
+    margin-bottom: 0.25rem;
+}
+.singles-list {
+    list-style: none;
+}
+
+.singles-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.singles-list li:last-child {
+    border-bottom: none;
+}
+
+
+
+
+#gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+#gallery-grid h2 {
+    grid-column: 1 / -1;
+}
+
+.gallery-item {
+    background: #fdf5ed;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+#signup-form,
+#hof-search {
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #1c1410;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #e8762b;
+}
+
+.form-group input.error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+button[type="submit"] {
+    background-color: #e8762b;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c9611f;
+}
+
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.form-message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    display: none;
+}
+
+.form-message.success {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-style: italic;
+}
+
+.error-display {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.error-display.show {
+    display: block;
+}
+
+.hof-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.hof-card {
+    background: #fdf5ed;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hof-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hof-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hof-card-content {
+    padding: 1rem;
+}
+
+.hof-card h3 {
+    color: #1c1410;
+    margin-bottom: 0.5rem;
+}
+
+.hof-card .category {
+    color: #e8762b;
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.hof-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+footer {
+    background-color: #1c1410;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+#benefits ul,
+#privacy ul,
+#hof-info ul,
+#album-art ul {
+    padding-left: 1.5rem;
+}
+
+#benefits ul li,
+#privacy ul li,
+#hof-info ul li,
+#album-art ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Band History */
+#band-history article {
+    margin-bottom: 1.5rem;
+}
+
+#band-history article:last-child {
+    margin-bottom: 0;
+}
+
+#band-history h3 {
+    color: #3d2814;
+    margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    header .tagline {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .album-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .album-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .album-info ol {
+        columns: 1;
+        text-align: left;
+    }
+
+    .member-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #highlights {
+        grid-template-columns: 1fr;
+    }
+
+    #members {
+        grid-template-columns: 1fr;
+    }
+
+    #gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hof-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* mobile css */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 1.5rem 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    header .tagline {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 1rem 0.5rem;
+    }
+
+    section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.25rem;
+    }
+
+    .album-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .member-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    footer {
+        padding: 1.5rem 0.5rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+ /* pc resizing*/
+@media screen and (min-width: 1400px) {
+    main {
+        max-width: 1400px;
+    }
+
+    #highlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #members {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hof-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    header {
+        background: #fff;
+        color: #000;
+    }
+
+    header .tagline {
+        color: #666;
+    }
+
+    section {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    footer {
+        background: #fff;
+        color: #000;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+
+    .gallery-item:hover img {
+        transform: none;
+    }
+
+    .hof-card:hover {
+        transform: none;
+    }
+}
